@@ -24,6 +24,7 @@ class HomeFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        println("Home Fragment oluştu")
 
         val testingModel: HomeFragmentViewModel= HomeFragmentViewModel()
 
