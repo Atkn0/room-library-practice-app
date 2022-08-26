@@ -41,7 +41,7 @@ class AddNoteFragment : Fragment() {
             noteTitle = binding.NoteTitleEditText.text.toString()
             noteDescript = binding.DescriptionEditText.text.toString()
 
-            myViewModel.createNoteModel(noteTitle,noteDescript)
+            myViewModel.AddNoteFunc(noteTitle,noteDescript)
             activity?.onBackPressed()
             println("Note Fragment Kapatıldı")
 

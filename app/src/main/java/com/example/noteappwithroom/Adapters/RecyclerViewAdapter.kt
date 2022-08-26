@@ -3,9 +3,13 @@ package com.example.noteappwithroom.Adapters
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.noteappwithroom.Models.NoteModel
 import com.example.noteappwithroom.databinding.NoteCardLayoutBinding
 
 class RecyclerViewAdapter():RecyclerView.Adapter<RecyclerViewAdapter.myClassViewHolder>(){
+
+    private var noteList = emptyList<NoteModel>()
+
     class myClassViewHolder(val binding: NoteCardLayoutBinding) :RecyclerView.ViewHolder(binding.root){
 
     }
@@ -25,9 +29,12 @@ class RecyclerViewAdapter():RecyclerView.Adapter<RecyclerViewAdapter.myClassView
     }
 
 
-    fun deleteItemFunct(posi:Int){
-
+    fun setData(noteList:List<NoteModel>){
+        this.noteList = noteList
+        notifyDataSetChanged()
 
     }
+
+
 
 }
