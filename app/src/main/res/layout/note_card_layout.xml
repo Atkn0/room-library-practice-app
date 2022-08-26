@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    android:id="@+id/NoteCardLayoutId"
+    android:elevation="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/NoteTextViewHeader1"
+            android:textColor="@color/black"
+
+            android:textSize="30sp"
+            tools:ignore="HardcodedText"
+            tools:targetApi="p" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="3dp"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:text="Hello 1 World Some Extra Text1"
+            tools:ignore="HardcodedText">
+
+        </TextView>
+
+
+
+    </LinearLayout>
+
+
+</com.google.android.material.card.MaterialCardView>
